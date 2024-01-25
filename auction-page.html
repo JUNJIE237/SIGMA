@@ -92,7 +92,7 @@
         </div>
 
         <div class="product-name">
-          <div class="name">Product Name</div>
+          <div class="name" id="main-product-name">Product Name</div>
           <!-- <h2 id="msg"></h2> -->
           <h2 id="greet"></h2>
         </div>
@@ -503,6 +503,7 @@
             {
               document.getElementById('main-product').innerText = itemName;
               document.getElementById('main-product-desc').innerText = innerDescArr[index];
+              document.getElementById('main-product-name').innerText = itemName;
               currentProduct = passedText;
               // console.log(currentProduct);
 
@@ -732,3 +733,4 @@
     </script>
   </body>
 </html>
+
